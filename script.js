@@ -21,7 +21,7 @@ function getRandomItem(str) {
 }
 
 function generatePassword() {
-  var passwordLength = (8, 12);
+  var passwordLength = Math.floor(Math.random() * 5) + 8;
   var passwordCharacters = "";
   passwordCharacters += getRandomItem(lowercaseChars);
   passwordCharacters += getRandomItem(uppercaseChars);
